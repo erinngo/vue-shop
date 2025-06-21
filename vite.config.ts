@@ -1,11 +1,14 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import path from "path";
+import { fileURLToPath } from "url";
 
-// https://vite.dev/config/
+// ESM 환경에서 __dirname 흉내내기
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 export default defineConfig({
   resolve: {
-    // 별칭 --> @로 저 경로를 불러온다
     alias: {
       "@": path.resolve(__dirname, "./src"),
       "@components": path.resolve(__dirname, "./src/components"),
@@ -14,7 +17,6 @@ export default defineConfig({
     },
   },
   plugins: [vue()],
-  //프록시 설정
   server: {
     proxy: {
       "/proxy": {
