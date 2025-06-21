@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/*
+*브라우저 기본 스타일 초기화,  PostCSS가 →   실제 CSS 규칙으로 변환
+*미리 정의된 컴포넌트 스타일
+*자주 쓰는 클래스들 (p-4, bg-red-500 등)
+
+.tailwind.css
+  └ @tailwind base/components/utilities
+        ↓
+vite + postcss.config.cjs
+  └ plugins: [tailwindcss()]
+        ↓
+빌드 시 → 진짜 CSS로 변환
+
+
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
