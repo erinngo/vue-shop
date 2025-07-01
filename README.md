@@ -1,7 +1,5 @@
 # Vue3 쇼핑몰 앱 (typescript, vite, vercel)
 
-### 배포 주소
-
 - https://vue-shop-sage.vercel.app/
 
 ## 목적
