@@ -14,12 +14,13 @@
 
 ## 프로젝트 구조
 
+```
 /src
 ├── components
 │ ├── carts - CartList.vue / CartView.vue
 │ ├── common - Nav.vue / SearchBox.vue / Footer.vue / Breadcrumb.vue / Theme.vue
 │ ├── products - ItemList.vue / ProductsDetail.vue
-│ └──  
+│ └──
 ├── views
 │ ├── Index.vue
 │ ├── Digital.vue
@@ -28,6 +29,8 @@
 │ └── Error.vue
 ├── store
 ├── router - index.ts
+
+```
 
 ---
 
