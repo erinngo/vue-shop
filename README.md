@@ -1,12 +1,37 @@
-# Vue3 쇼핑몰 앱 (typescript, vite, vercel)
+## Vue3 쇼핑몰 앱 (vue, typescript, vite, vercel)
 
 - https://vue-shop-sage.vercel.app/
 
 ## 목적
 
-## 구조
+1. React -> Vue 마이그레이션
+2. SPA 쇼핑몰 기본 기능 구현
 
-## Skeleton UI (ItemList.vue)
+- 아이템 구분 및 정리
+- 장바구니
+- 검색 필터
+- day/night UI
+
+## 프로젝트 구조
+
+/src
+├── components
+│ ├── carts - CartList.vue / CartView.vue
+│ ├── common - Nav.vue / SearchBox.vue / Footer.vue / Breadcrumb.vue / Theme.vue
+│ ├── products - ItemList.vue / ProductsDetail.vue
+│ └──  
+├── views
+│ ├── Index.vue
+│ ├── Digital.vue
+│ ├── Fashion.vue
+│ ├── Accessory.vue
+│ └── Error.vue
+├── store
+├── router - index.ts
+
+---
+
+## Skeleton UI (ItemList.vue) 구현
 
 ### 문제
 
@@ -42,5 +67,3 @@ skeleton은 "로딩중 + 아무 데이터도 없음" 이 경우에만 렌더되�
 - PC 검색창과 모바일 검색창을 분리 관리
   → ref를 pcInputRef, mobileInputRef로 나누고
   → 조건 분기 없이 두 요소 중 어디에도 포함되지 않은 경우만 외부 클릭으로 감지하도록 개선
-
-## 레이아웃 쉬프트
